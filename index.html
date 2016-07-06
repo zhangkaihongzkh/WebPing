@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>js-ping</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no, maximum-scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+	<form class="form-inline" id="main_input">
+		<div class="form-group">
+			<label for="URL">URL:</label>
+			<input  id="txtURL" type="text" class="form-control" id="URL" placeholder="请输入目的网址">
+		</div>
+			<div class="form-group">
+			<label for="Timeout">Timeout:</label>
+			<input  id="txtTimeout"
+			type="text" class="form-control" id="Timeout" placeholder="请输入时间">
+		</div>
+		<button id="btnSwitch" type="button" class="btn btn-default" onclick="handleBtnClick()" value="开始测试">开始 or 停止</button>
+	</form>
+</div>
+
+<!-- 分隔接收输入和输出 -->
+<div class="hr_5"></div>
+
+<div class="container">
+	<!-- 用于输出内容 -->
+	<div id="divContent"></div>	
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+/*	$(function(){
+		$("#btnSwitch").toggle(function() {
+			$(this).addClass('active');
+		}, function() {
+			$(this).removeClass('active');
+		});
+		
+	});*/
+</script>
+</body>
+</html>
